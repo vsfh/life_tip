@@ -16,3 +16,17 @@ git fetch origin branch_name
 git checkout -b local_branch_name origin/branch_name
 git pull origin branch_name
 ```
+
+## proxychains 
+
+```
+https://github.com/rofl0r/proxychains-ng
+socks5 192.168.2.89 1089
+```
+
+## finalshell
+
+```
+adduser username not useradd
+sudo usermod -aG sudo username
+```
