@@ -30,3 +30,9 @@ socks5 192.168.2.89 1089
 adduser username not useradd
 sudo usermod -aG sudo username
 ```
+
+## softlink
+
+```
+sudo mount -t cifs -o dir_mode=0777,file_mode=0777 //192.168.22.17/share /mnt/share
+```
