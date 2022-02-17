@@ -22,6 +22,7 @@ git pull origin branch_name
 ```
 https://github.com/rofl0r/proxychains-ng
 socks5 192.168.2.89 1089
+https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
 ```
 
 ## finalshell
