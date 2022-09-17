@@ -58,4 +58,5 @@ sudo apt-get -y install cuda
 
 ```
 find ./stylegan3_r_2538 -type f -delete
+export CUDA_HOME=/usr/local/cuda-11
 ```
