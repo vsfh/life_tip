@@ -54,7 +54,7 @@ sudo apt-get update
 sudo apt-get -y install cuda
 ```
 
-##delete
+## delete
 
 ```
 find ./stylegan3_r_2538 -type f -delete
