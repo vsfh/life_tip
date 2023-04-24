@@ -69,3 +69,27 @@ git push origin my-test  //将my-test分支推送到远程
 git branch --set-upstream-to=origin/my-test //将本地分支my-test关联到远程分支my-test上   
 git branch -a //查看远程分支 
 ```
+
+## set wsl proxy
+
+```
+#获取宿主机的IP
+export windows_host=`ipconfig.exe | grep -n4 WSL | tail -n 1 | awk -F":" '{ print $2 }' | sed 's/^[ \r\n\t]*//;s/[ \r\n\t]*$//'`
+
+#假设宿主机代理端口是7890
+export ALL_PROXY=http://$windows_host:7890
+export HTTP_PROXY=$ALL_PROXY
+export http_proxy=$ALL_PROXY
+export HTTPS_PROXY=$ALL_PROXY
+export https_proxy=$ALL_PROXY
+
+#设置git的代理
+if [ "`git config --global --get https.proxy`" != "http://$windows_host:7890" ]; then
+	git config --global https.proxy http://$windows_host:7890
+fi
+
+if [ "`git config --global --get http.proxy`" != "http://$windows_host:7890" ]; then
+	git config --global http.proxy http://$windows_host:7890
+fi
+```
+
