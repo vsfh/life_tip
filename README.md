@@ -70,7 +70,7 @@ git branch --set-upstream-to=origin/my-test //将本地分支my-test关联到远
 git branch -a //查看远程分支 
 ```
 
-## set wsl proxy
+## set wsl proxy in bashrc
 
 ```
 #获取宿主机的IP
