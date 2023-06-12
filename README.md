@@ -35,7 +35,7 @@ sudo usermod -aG sudo username
 ## softlink
 
 ```
-sudo mount -t cifs -o dir_mode=0777,file_mode=0777 //192.168.22.17/share /mnt/share
+sudo mount -t cifs -o uid=1000,file_mode=0777,dir_mode=0777 //192.168.2.217/share /mnt/share
 ```
 
 ## Gitpod
